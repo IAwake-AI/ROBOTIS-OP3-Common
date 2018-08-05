@@ -159,7 +159,7 @@
     </material>
   </xacro:macro>
 
-  <!-- right shoulder pitch joint -->
+  <!-- right shoulder roll joint -->
   <xacro:macro name="insert_mesh_r_sho_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
@@ -185,36 +185,47 @@
   <xacro:macro name="insert_mesh_l_sho_pitch_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://op3_description/meshes/la1.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/l_shoulder_visual.STL"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
     </material>
   </xacro:macro>
 
-  <!-- left shoulder pitch joint -->
+  <!-- left shoulder roll joint -->
   <xacro:macro name="insert_mesh_l_sho_roll_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://op3_description/meshes/la2.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/l_upper_arm_visual.STL"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
     </material>
   </xacro:macro>
 
-  <!-- left elbow joint -->
+  <!-- left shoulder yaw joint -->
+  <xacro:macro name="insert_mesh_l_sho_yaw_link">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <geometry>
+      <mesh filename="package://op3_description/meshes/l_shoulder_motor_visual.STL"/>
+    </geometry>
+    <material name="Grey">
+      <color rgba="0.60 0.60 0.60 1.0"/>
+    </material>
+  </xacro:macro>
+
+    <!-- left elbow joint -->
   <xacro:macro name="insert_mesh_l_el_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
-      <mesh filename="package://op3_description/meshes/la3.stl"  scale="0.001 0.001 0.001"/>
+      <mesh filename="package://op3_description/meshes/l_forearm_visual.STL"/>
     </geometry>
     <material name="Grey">
       <color rgba="0.60 0.60 0.60 1.0"/>
     </material>
   </xacro:macro>
 
-  <!-- head yaw joint -->
+  <!-- head pan joint -->
   <xacro:macro name="insert_mesh_head_pan_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>
@@ -225,7 +236,7 @@
     </material>
   </xacro:macro>
 
-  <!-- head yaw joint -->
+  <!-- head tilt joint -->
   <xacro:macro name="insert_mesh_head_tilt_link">
     <origin xyz="0 0 0" rpy="0 0 0" />
     <geometry>

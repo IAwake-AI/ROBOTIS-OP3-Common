@@ -9,7 +9,6 @@
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.rarm.xacro" />
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.larm.xacro" />
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.structure.head.xacro" />
-
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.gazebo.xacro" />
   <xacro:include filename="$(find op3_description)/urdf/robotis_op3.transmissions.xacro" />
 

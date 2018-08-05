@@ -164,6 +164,15 @@
              izz="0.00023474" />
   </xacro:macro>
 
+  <!-- left shoulder yaw joint -->
+  <xacro:macro name="insert_inertia_l_sho_yaw_link">
+    <origin xyz="-0.01844 0.04514 0.00028" />
+    <mass value="0.17758"/>
+    <inertia ixx="0.00022804" ixy="-0.00000001" ixz="0.00000003"
+             iyy="0.00003042" iyz="0.00000059"
+             izz="0.00023474" />
+  </xacro:macro>
+
   <!-- left elbow joint -->
   <xacro:macro name="insert_inertia_l_el_link">
     <origin xyz="-0.01900 0.07033 0.00380" />

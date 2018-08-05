@@ -4,7 +4,7 @@ robotis_op3:
 
   joint_state_controller:
     type: joint_state_controller/JointStateController
-    publish_rate: 50
+    publish_rate: 33
   
   # Position Controllers ---------------------------------------
 
@@ -84,6 +84,11 @@ robotis_op3:
     joint: l_sho_roll
     pid: {p: 10.0, i: 0.0, d: 0.0}
 
+  l_sho_yaw_position:
+    type: effort_controllers/JointPositionController
+    joint: l_sho_yaw
+    pid: {p: 10.0, i: 0.0, d: 0.0}
+
   l_el_position:
     type: effort_controllers/JointPositionController
     joint: l_el
@@ -99,6 +104,11 @@ robotis_op3:
   r_sho_roll_position:
     type: effort_controllers/JointPositionController
     joint: r_sho_roll
+    pid: {p: 10.0, i: 0.0, d: 0.0}
+
+  r_sho_yaw_position:
+    type: effort_controllers/JointPositionController
+    joint: r_sho_yaw
     pid: {p: 10.0, i: 0.0, d: 0.0}
 
   r_el_position:

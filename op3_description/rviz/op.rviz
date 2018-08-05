@@ -7,7 +7,6 @@ Panels:
         - /Global Options1
         - /Status1
         - /RobotModel1/Links1
-        - /RobotModel1/Links1/body_link1
         - /RobotModel1/Links1/r_hip_roll_link1
         - /RobotModel1/Links1/r_hip_yaw_link1
         - /TF1
@@ -63,11 +62,6 @@ Visualization Manager:
         Expand Link Details: true
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        body_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         cam_link:
           Alpha: 1
           Show Axes: false
@@ -183,8 +177,6 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        body_link:
-          Value: true
         cam_link:
           Value: true
         head_pan_link:
@@ -232,36 +224,7 @@ Visualization Manager:
       Show Arrows: false
       Show Axes: false
       Show Names: false
-      Tree:
-        body_link:
-          head_pan_link:
-            head_tilt_link:
-              cam_link:
-                {}
-          l_hip_yaw_link:
-            l_hip_roll_link:
-              l_hip_pitch_link:
-                l_knee_link:
-                  l_ank_pitch_link:
-                    l_ank_roll_link:
-                      {}
-          l_sho_pitch_link:
-            l_sho_roll_link:
-              l_el_link:
-                {}
-          r_hip_yaw_link:
-            r_hip_roll_link:
-              r_hip_pitch_link:
-                r_knee_link:
-                  r_ank_pitch_link:
-                    r_ank_roll_link:
-                      {}
-          r_sho_pitch_link:
-            r_sho_roll_link:
-              r_el_link:
-                {}
-      Update Interval: 0
-      Value: true
+            Value: true
     - Class: rviz/Image
       Enabled: true
       Image Topic: /facerec/image_raw
@@ -277,7 +240,6 @@ Visualization Manager:
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
-    Fixed Frame: body_link
     Frame Rate: 30
   Name: root
   Tools:

@@ -134,21 +134,24 @@
   <gazebo reference="l_sho_pitch_link">
     <mu1>0.2</mu1>
     <mu2>0.2</mu2>
-    <material>Gazebo/White</material>
     <selfCollide>false</selfCollide>
   </gazebo>
 
   <gazebo reference="l_sho_roll_link">
     <mu1>0.2</mu1>
     <mu2>0.2</mu2>
-    <material>Gazebo/White</material>
+    <selfCollide>false</selfCollide>
+  </gazebo>
+
+  <gazebo reference="l_sho_yaw_link">
+    <mu1>0.2</mu1>
+    <mu2>0.2</mu2>
     <selfCollide>false</selfCollide>
   </gazebo>
 
   <gazebo reference="l_el_link">
     <mu1>0.2</mu1>
     <mu2>0.2</mu2>
-    <material>Gazebo/White</material>
     <selfCollide>false</selfCollide>
   </gazebo>
 
