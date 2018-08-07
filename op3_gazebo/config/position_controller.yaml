@@ -123,7 +123,29 @@ robotis_op3:
     joint: head_pan
     pid: {p: 5.0, i: 0.0, d: 0.0}
 
-  head_tilt_position:
+  # Body -------------------------------------------------------
+
+  abs_x_position:
     type: effort_controllers/JointPositionController
-    joint: head_tilt
-    pid: {p: 5.0, i: 0.0, d: 0.0}
+    joint: abs_x
+    pid: {p: 50.0, i: 0.0, d: 0.0}
+
+  abs_y_position:
+    type: effort_controllers/JointPositionController
+    joint: abs_y
+    pid: {p: 50.0, i: 0.0, d: 0.0}
+
+  abs_z_position:
+    type: effort_controllers/JointPositionController
+    joint: abs_z
+    pid: {p: 50.0, i: 0.0, d: 0.0}
+
+  bust_x_position:
+    type: effort_controllers/JointPositionController
+    joint: bust_x
+    pid: {p: 50.0, i: 0.0, d: 0.0}
+  
+  bust_y_position:
+    type: effort_controllers/JointPositionController
+    joint: bust_y
+    pid: {p: 50.0, i: 0.0, d: 0.0}

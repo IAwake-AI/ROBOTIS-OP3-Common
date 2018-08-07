@@ -66,16 +66,6 @@ Visualization Manager:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-        head_pan_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        head_tilt_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         l_ank_pitch_link:
           Alpha: 1
           Show Axes: false
@@ -178,10 +168,6 @@ Visualization Manager:
       Frames:
         All Enabled: true
         cam_link:
-          Value: true
-        head_pan_link:
-          Value: true
-        head_tilt_link:
           Value: true
         l_ank_pitch_link:
           Value: true

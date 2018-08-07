@@ -18,26 +18,22 @@
     <arg name="headless" value="$(arg headless)"/>
   </include>
 
-
-
+  <!-- Load the URDF into the ROS Parameter Server 
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find op3_description)/urdf/robotis_op3.urdf.xacro'" />
+  -->
   <param name="robot_description" command="cat '$(find op3_description)/urdf/OP3_IAwake.urdf'"/>
 
 
   <!-- Spawn a robot into Gazebo -->
-<!--
-  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-file $(find op3_description)/urdf/OP3_IAwake.urdf -urdf -z 0.45 -model robotis_op3" />
--->
-
   <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model" args="-param robot_description -urdf -z 0.45 -model robotis_op3" />
 
 
-  <!-- Load the URDF into the ROS Parameter Server 
-  <param name="robot_description" command="$(find xacro)/xacro.py '$(find op3_description)/urdf/robotis_op3.urdf.xacro'" />
--->
-  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot 
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
+  <!--
   <node pkg="gazebo_ros" type="spawn_model" name="urdf_spawner" respawn="false" output="screen"
         args="-urdf -model robotis_op3 -z 0.285 -param robot_description"/>
--->
+  -->
+
 
 
   <!-- ros_control robotis humanoid launch file -->
