@@ -14,7 +14,7 @@
 		<visual>
 			<origin xyz="0 0 0" rpy="0 0 0"></origin>
 			<geometry>
-				<mesh filename="package://op3_description/meshes/head_01-copy-tenth-scale02.stl" scale="0.0009 0.0009 0.0009"> </mesh>
+				<mesh filename="package://op3_description/meshes/head_01-copy-tenth-scale02.stl" scale="0.0007 0.0007 0.0007"> </mesh>
 			</geometry>
 			<material name="plastic">
 				<color rgba="0.3 0.9 0.9 1.0"></color>
@@ -575,7 +575,7 @@
 		<mass>0.04863</mass>
 	</link>
 	<joint name="head_pan" type="revolute">
-		<origin xyz="0.0 -0.1 0.245" rpy="0 0 0"></origin>
+		<origin xyz="0.0 -0.1 0.345" rpy="0 0 0"></origin>
 		<parent link="pelvis"></parent>
 		<child link="head"></child>
 		<axis xyz="0 0 1"></axis>
@@ -589,7 +589,7 @@
 		<limit effort="3.1" lower="-0.497418836818" upper="0.523598775598" velocity="7.0"></limit>
 	</joint>
 	<joint name="r_hip_yaw" type="revolute">
-		<origin xyz="-0.0439986111539757 0 0.005" rpy="0 0 0"></origin>
+		<origin xyz="-0.0439986111539757 0 0.005" rpy="0 0.523598775596 0"></origin>
 		<parent link="r_hip"></parent>
 		<child link="r_hip_motor"></child>
 		<axis xyz="0 -1 0"></axis>
@@ -624,7 +624,7 @@
 		<limit effort="3.1" lower="-0.523598775598" upper="0.497418836818" velocity="7.0"></limit>
 	</joint>
 	<joint name="l_hip_yaw" type="revolute">
-		<origin xyz="0.0439986111539757 0 0.005" rpy="0 0 0"></origin>
+		<origin xyz="0.0439986111539757 0 0.005" rpy="0 -0.523598775596 0"></origin>
 		<parent link="l_hip"></parent>
 		<child link="l_hip_motor"></child>
 		<axis xyz="0 -1 0"></axis>
@@ -701,7 +701,7 @@
 		<limit effort="3.1" lower="-1.83259571459" upper="1.91986217719" velocity="7.0"></limit>
 	</joint>
 	<joint name="l_sho_yaw" type="revolute">
-		<origin xyz="0 0.03625 0.0185000000000001" rpy="0 0 0"></origin>
+		<origin xyz="0 0.03625 0.0185000000000001" rpy="0 1.5707963267949 0"></origin>
 		<parent link="l_shoulder_motor"></parent>
 		<child link="l_upper_arm"></child>
 		<axis xyz="0 1 0"></axis>
@@ -729,7 +729,7 @@
 		<limit effort="3.1" lower="-1.91986217719" upper="1.83259571459" velocity="7.0"></limit>
 	</joint>
 	<joint name="r_sho_yaw" type="revolute">
-		<origin xyz="0 0.03625 0.0185000000000002" rpy="0 0 0"></origin>
+		<origin xyz="0 0.03625 0.0185000000000002" rpy="0 -1.5707963267949 0"></origin>
 		<parent link="r_shoulder_motor"></parent>
 		<child link="r_upper_arm"></child>
 		<axis xyz="0 1 0"></axis>
